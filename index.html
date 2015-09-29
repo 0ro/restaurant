@@ -17,84 +17,88 @@
   <div class="header">
     <div class="container">
       <div class="row">
-        <div class="menu">
-          <nav class="navbar navbar-default" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <div class="logo">
-                <img src="static/img/logo.png" alt="">
+        <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
+          <div class="logo">
+            <img src="static/img/logo.png" alt="">
+          </div>
+          <!-- /.logo -->
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-9 col-lg-10">
+          <div class="menu">
+            <nav class="navbar navbar-default" role="navigation">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
               </div>
-              <!-- /.logo -->
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-              <ul class="nav navbar-nav">
-                <li class="active">
-                  <a href="#">О ресторане</a>
-                </li>
-                <li class="">
-                  <a href="#">Новости</a>
-                </li>
-                <li class="">
-                  <a href="#">Меню</a>
-                </li>
-                <li class="">
-                  <a href="#">Галерея</a>
-                </li>
-                <li class="">
-                  <a href="#">Банкеты</a>
-                </li>
-                <li class="">
-                  <a href="#">Команда</a>
-                </li>
-                <li class="">
-                  <a href="#">Отзывы</a>
-                </li>
-                <li class="">
-                  <a href="#">Контакты</a>
-                </li>
-              </ul>
-              <!-- Button trigger modal -->
-              <button type="button" class="btn modal-button" data-toggle="modal" data-target="#myModal">
-                Забронировать
-              </button>
-              <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="contact-box-consult__title">Забронировать</h4>
-                  </div>
-                  <div class="modal-body">
-                    <form action="" method="POST" role="form">
-                      <div class="form-group">
-                        <label for="">Имя</label>
-                        <input type="text" class="form-control" id="" placeholder="Имя">
-                      </div>
-                      <div class="form-group">
-                        <label for="">Email</label>
-                        <input type="text" class="form-control" id="" placeholder="Email">
-                      </div>
-                      <div class="form-group">
-                        <label for="">Сообщение</label>
-                        <textarea name="message" placeholder="Введите ваше сообщение" class="form-control"></textarea>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Отправить</button>
-                    </form>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active">
+                    <a href="#">О ресторане</a>
+                  </li>
+                  <li class="visible-lg">
+                    <a href="#">Новости</a>
+                  </li>
+                  <li class="">
+                    <a href="#">Меню</a>
+                  </li>
+                  <li class="visible-lg">
+                    <a href="#">Галерея</a>
+                  </li>
+                  <li class="">
+                    <a href="#">Банкеты</a>
+                  </li>
+                  <li class="">
+                    <a href="#">Команда</a>
+                  </li>
+                  <li class="visible-lg">
+                    <a href="#">Отзывы</a>
+                  </li>
+                  <li class="">
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn modal-button" data-toggle="modal" data-target="#myModal">
+                  Забронировать
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="contact-box-consult__title">Забронировать</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form action="" method="POST" role="form">
+                        <div class="form-group">
+                          <label for="">Имя</label>
+                          <input type="text" class="form-control" id="" placeholder="Имя">
+                        </div>
+                        <div class="form-group">
+                          <label for="">Email</label>
+                          <input type="text" class="form-control" id="" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <label for="">Сообщение</label>
+                          <textarea name="message" placeholder="Введите ваше сообщение" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- /.navbar-collapse -->
-          </nav>
+              <!-- /.navbar-collapse -->
+            </nav>
+          </div>
+          <!-- /.menu -->
         </div>
-        <!-- /.menu -->
       </div>
     </div>
     <div class="slider owl-carousel owl-theme" id="slider">

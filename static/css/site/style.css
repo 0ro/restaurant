@@ -15,10 +15,12 @@
 }
 .header {
   height: 768px;
+  padding: 25px 0 0;
 
   background: url(../../img/bg-header.jpg);
 }
 .menu {
+  margin: 0 -30px 0;
 }
 .logo {
   float: left;
@@ -41,6 +43,7 @@
 }
 .navbar-collapse {
   margin: 25px 0 0;
+  padding: 0;
 }
 .navbar-ex1-collapse {
 }
@@ -71,7 +74,7 @@
   color: #d0b964;
 }
 .modal-button {
-  margin: 8px 0 0 15px;
+  margin: 8px 0 0 11px;
   padding: 4px 11px;
 
   text-transform: uppercase;
@@ -81,7 +84,11 @@
   border-radius: 0;
   background: none;
 }
-
+.navbar-default .navbar-toggle {
+  border-radius: 0;
+  border-color: #a09158;
+  border-width: 2px;
+}
 .modal-button:hover {
   color: #fff;
   border-color: #fff;
@@ -121,7 +128,6 @@
   color: #fff;
 }
 .owl-theme .owl-controls {
-  width: 1170px;
   margin: 0 auto;
 
   text-align: right;
@@ -283,14 +289,17 @@
 .contacts__item-email {
 }
 .social-icons {
-  color: #fff;
   width: 158px;
   margin: 23px auto 0;
+
+  color: #fff;
 }
 .social-icons__item {
-  float: left;
   font-size: 18px;
   font-weight: 900;
+
+  float: left;
+
   margin: 0 13px;
 }
 .social-icons__item a {
