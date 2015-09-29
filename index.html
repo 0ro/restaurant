@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Ресторан</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,700,400italic,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/owl.carousel.css">
+  <link rel="stylesheet" href="static/css/owl.theme.css">
   <link rel="stylesheet" href="static/css/site/normalize.css">
+  <link rel="stylesheet" href="static/css/site/fonts.css">
   <link rel="stylesheet" href="static/css/site/style.css">
 </head>
 <body>
@@ -15,10 +18,13 @@
     <div class="container">
       <div class="row">
         <div class="menu">
-          <nav class="navbar navbar-default {{=mods 'menu'}}" role="navigation">
-          <div class="container">
+          <nav class="navbar navbar-default" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+              <div class="logo">
+                <img src="static/img/logo.png" alt="">
+              </div>
+              <!-- /.logo -->
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -54,20 +60,124 @@
                   <a href="#">Контакты</a>
                 </li>
               </ul>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn modal-button" data-toggle="modal" data-target="#myModal">
+                Забронировать
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="contact-box-consult__title">Забронировать</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form action="" method="POST" role="form">
+                      <div class="form-group">
+                        <label for="">Имя</label>
+                        <input type="text" class="form-control" id="" placeholder="Имя">
+                      </div>
+                      <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control" id="" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="">Сообщение</label>
+                        <textarea name="message" placeholder="Введите ваше сообщение" class="form-control"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- /.navbar-collapse -->
-          </div>
           </nav>
         </div>
         <!-- /.menu -->
       </div>
-      <div class="row">
-        <div class="slider">
-          
-        </div>
-        <!-- /.slider -->
-      </div>
     </div>
+    <div class="slider owl-carousel owl-theme" id="slider">
+      <div class="slider__item">
+        <div class="slider__content">
+          <h1 class="slider__slogan">Первый греческий ресторан в спб</h1>
+          <p class="slider__p line">В июле, 14-го числа, на Малой Охте открылся ресторан Pomegranate Premium, - первое и единственное в Петербурге <br> заведение, на 100% соответствующие стандартам аутентичной греческой кухни!</p>
+          <div class="social-icons clearfix">
+            <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+            <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+            <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+            <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <div class="slider__content">
+          <h1 class="slider__slogan">Первый греческий ресторан в спб</h1>
+          <p class="slider__p line">В июле, 14-го числа, на Малой Охте открылся ресторан Pomegranate Premium, - первое и единственное в Петербурге <br> заведение, на 100% соответствующие стандартам аутентичной греческой кухни!</p>
+          <div class="social-icons clearfix">
+            <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+            <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+            <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+            <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <div class="slider__content">
+          <h1 class="slider__slogan">Первый греческий ресторан в спб</h1>
+          <p class="slider__p line">В июле, 14-го числа, на Малой Охте открылся ресторан Pomegranate Premium, - первое и единственное в Петербурге <br> заведение, на 100% соответствующие стандартам аутентичной греческой кухни!</p>
+          <div class="social-icons clearfix">
+            <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+            <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+            <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+            <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <div class="slider__content">
+          <h1 class="slider__slogan">Первый греческий ресторан в спб</h1>
+          <p class="slider__p line">В июле, 14-го числа, на Малой Охте открылся ресторан Pomegranate Premium, - первое и единственное в Петербурге <br> заведение, на 100% соответствующие стандартам аутентичной греческой кухни!</p>
+          <div class="social-icons clearfix">
+            <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+            <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+            <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+            <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <div class="slider__content">
+          <h1 class="slider__slogan">Первый греческий ресторан в спб</h1>
+          <p class="slider__p line">В июле, 14-го числа, на Малой Охте открылся ресторан Pomegranate Premium, - первое и единственное в Петербурге <br> заведение, на 100% соответствующие стандартам аутентичной греческой кухни!</p>
+          <div class="social-icons clearfix">
+            <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+            <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+            <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+            <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <div class="slider__content">
+          <h1 class="slider__slogan">Первый греческий ресторан в спб</h1>
+          <p class="slider__p line">В июле, 14-го числа, на Малой Охте открылся ресторан Pomegranate Premium, - первое и единственное в Петербурге <br> заведение, на 100% соответствующие стандартам аутентичной греческой кухни!</p>
+          <div class="social-icons clearfix">
+            <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+            <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+            <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+            <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <!-- /.slider__item -->
+    </div>
+    <!-- /.slider -->
   </div>
   <!-- /.header -->
   <div class="team">
@@ -335,5 +445,7 @@
 </div>
 <script src="static/js/jquery-2.1.4.min.js"></script>
 <script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/owl.carousel.min.js"></script>
+<script src="static/js/site/script.js"></script>
 </body>
 </html>

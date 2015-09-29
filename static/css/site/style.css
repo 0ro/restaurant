@@ -1,0 +1,323 @@
+.clearfix:before,
+.clearfix:after {
+  display: table;
+
+  content: '';
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.page {
+  font-family: 'Lato';
+}
+.header {
+  height: 768px;
+
+  background: url(../../img/bg-header.jpg);
+}
+.menu {
+}
+.logo {
+  float: left;
+}
+.navbar {
+}
+.navbar-default {
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+.navbar-header {
+}
+.navbar-toggle {
+}
+.sr-only {
+}
+.icon-bar {
+}
+.collapse {
+}
+.navbar-collapse {
+  margin: 25px 0 0;
+}
+.navbar-ex1-collapse {
+}
+.nav {
+}
+.navbar-nav {
+  margin: 0 0 0 6px;
+}
+.active {
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #d0b964;
+  background: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-weight: 400;
+
+  text-transform: uppercase;
+
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #d0b964;
+}
+.modal-button {
+  margin: 8px 0 0 15px;
+  padding: 4px 11px;
+
+  text-transform: uppercase;
+
+  color: #fff;
+  border: 2px solid #a39859;
+  border-radius: 0;
+  background: none;
+}
+
+.modal-button:hover {
+  color: #fff;
+  border-color: #fff;
+}
+.slider {
+}
+.slider__item {
+  display: block;
+
+  width: 100%;
+  height: 470px;
+}
+.slider__content {
+  overflow: hidden;
+
+  margin: 92px 0 0;
+
+  text-align: center;
+}
+.slider__slogan {
+  font-size: 31px;
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+
+  color: #fff;
+}
+.slider__p {
+  font-size: 18px;
+  font-weight: 300;
+
+  margin: 24px 0 0;
+
+  letter-spacing: 1px;
+
+  color: #fff;
+}
+.owl-theme .owl-controls {
+  width: 1170px;
+  margin: 0 auto;
+
+  text-align: right;
+}
+.owl-theme .owl-controls .owl-page span {
+  width: 10px;
+  height: 10px;
+
+  opacity: 1;
+  border: 2px solid #7f8e9a;
+  border-radius: 0;
+  background: none;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  border: 2px solid #b7a151;
+  background: #b7a151;
+}
+.team {
+}
+.team__chief {
+}
+.team__chief-name {
+}
+.team__chief-post {
+}
+.team__description {
+}
+.team__all {
+}
+.team__all-description {
+}
+.team__all-list {
+}
+.team__all-title {
+}
+.team__all-item {
+}
+.team__all-name {
+}
+.team__all-post {
+}
+.more {
+}
+.more__icon {
+}
+.more__title {
+}
+.advantages {
+}
+.advantages__map {
+}
+.advantages__item {
+}
+.advantages__item-1 {
+}
+.advantages__item-2 {
+}
+.advantages__item-3 {
+}
+.advantages__item-4 {
+}
+.advantages__item-5 {
+}
+.advantages__item-6 {
+}
+.advantages__item-7 {
+}
+.advantages__item-8 {
+}
+.advantages__item-9 {
+}
+.advantages__item-10 {
+}
+.advantages__item-11 {
+}
+.advantages__desription {
+}
+.carte {
+}
+.carte__title {
+}
+.line {
+}
+
+.line:after {
+  display: block;
+
+  width: 43px;
+  height: 1px;
+  margin: 58px auto 0;
+
+  content: '';
+
+  background-color: #fff;
+}
+.carte__desription {
+}
+.carte__item {
+}
+.carte__item-1 {
+}
+.carte__item-title {
+}
+.carte__item-info {
+}
+.carte__item-button {
+}
+.carte__item-link {
+}
+.carte__item-2 {
+}
+.carte__item-3 {
+}
+.carte__item-4 {
+}
+.placement {
+}
+.placement__title {
+}
+.placement__slider {
+}
+.reviews {
+}
+.reviews__title {
+}
+.reviews__button {
+}
+.news {
+}
+.news__item {
+}
+.news__item-title {
+}
+.news__item-date {
+}
+.angle {
+}
+.angle__title {
+}
+.angle__title_small {
+}
+.contacts {
+}
+.contacts__item {
+}
+.contacts__item-icon {
+}
+.contacts__item-icon-1 {
+}
+.contacts__item-title {
+}
+.contacts__item-icon-2 {
+}
+.contacts__item-icon-3 {
+}
+.contacts__item-phone {
+}
+.contacts__item-email {
+}
+.social-icons {
+  color: #fff;
+  width: 158px;
+  margin: 23px auto 0;
+}
+.social-icons__item {
+  float: left;
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0 13px;
+}
+.social-icons__item a {
+  color: #fff;
+}
+.social-icons__item a:hover {
+  color: #ccc;
+}
+.social-icons__item-1 {
+}
+.social-icons__item-2 {
+}
+.social-icons__item-3 {
+}
+.social-icons__item-4 {
+}
+.yandex-map {
+}
+.footer {
+}
+.footer__copyright {
+}
+.footer__social {
+}
+.footer__rosait {
+}
+.logo-rosait {
+}
+.footer__advertising {
+}
