@@ -1,3 +1,4 @@
+// Плавный скролл страницы
 $(document).bind( 'mousewheel', function (e) { 
   var nt = $(document.body).scrollTop()-(e.originalEvent.wheelDeltaY); 
   e.preventDefault(); 
@@ -14,20 +15,18 @@ $(document).ready(function() {
     singleItem:true
   });
 
-
+// Плавный скролл к якорю
   $(".angle-down").on("click","a", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
-
     //забираем идентификатор блока с атрибута href
     var id  = $(this).attr('href'),
-
     //узнаем высоту от начала страницы до блока на который ссылается якорь
       top = $(id).offset().top;
-    
     //анимируем переход на расстояние - top за 1500 мс
     $('body,html').animate({scrollTop: top}, 1500);
   });
+// Параллакс эффект
   var parallaxEffect = function(wrapper, ellement, way, factor) {
     $(window).scroll(function() {
       var $wrapper = $(wrapper),
@@ -43,4 +42,5 @@ $(document).ready(function() {
   };
   parallaxEffect('#team','#granate','top', 2);
   parallaxEffect('#team','#granate-part','bottom', 2)
+  parallaxEffect('#advantages','#olievs','top', 2)
 });

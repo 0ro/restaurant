@@ -10,11 +10,13 @@
 .clearfix {
   zoom: 1;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 .page {
   font-family: 'Lato';
+
   height: 100%;
 }
 .header {
@@ -211,11 +213,19 @@ html, body {
   margin-bottom: 3px;
 }
 .team {
-  padding-top: 71px;
   position: relative;
-  min-height: 100%;
-  background-image: url(../../img/pattern-team.jpg);
+
   overflow: hidden;
+
+  min-height: 100%;
+  padding-top: 71px;
+
+  background-image: url(../../img/pattern-team.jpg);
+}
+.vaza {
+  background-image: url(../../img/vaza.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 .team__chief {
   float: left;
@@ -307,70 +317,197 @@ html, body {
 }
 #granate {
   position: absolute;
-  background: url(../../img/granate.png);
-  width: 292px;
   bottom: -116px;
-  height: 256px;
   left: 30px;
+
+  width: 292px;
+  height: 256px;
+
+  background: url(../../img/granate.png);
 }
 .granate-part {
   position: absolute;
-  background: url(../../img/granate-part.png);
-  width: 146px;
   top: 0;
-  height: 113px;
   right: 0;
+
+  width: 146px;
+  height: 113px;
+
+  background: url(../../img/granate-part.png);
 }
 .more {
+  overflow: hidden;
+
   width: 260px;
   margin: 18px auto 0;
-  overflow: hidden;
 }
 .more__icon {
+  float: left;
+
   width: 35px;
   height: 35px;
 
   background: url(../../img/arrow-right.png) no-repeat;
-  float: left;
 }
 .more__title {
   float: left;
-  text-transform: uppercase;
-  color: #000;
+
   margin: 8px 0 0 14px;
+
+  text-transform: uppercase;
+
+  color: #000;
 }
 .more__title:hover {
   color: #000;
 }
 .advantages {
+  padding: 19px 0 0;
+
+  background: url(../../img/pattern-advantages.png) top repeat-x;
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+}
+.advantages__content {
+  position: relative;
+
+  float: right;
+
+  width: 88%;
 }
 .advantages__map {
+  position: relative;
+
+  float: left;
+
+  width: 60%;
+
+  background-color: #b2e0f6;
+}
+.advantages__img {
+  display: block;
+  float: right;
+
+  width: 100%;
 }
 .advantages__item {
+  cursor: pointer;
+}
+.advantages__item span {
+  font-size: 16px;
+  font-style: italic;
+}
+.advantages__item i {
+  display: block;
+
+  width: 22px;
+  height: 28px;
+  margin: 0 auto;
+
+  background: url(../../img/marker-map.png);
 }
 .advantages__item-1 {
+  position: absolute;
+  top: 6%;
+  left: 20%;
+}
+.advantages__item-1 span {
 }
 .advantages__item-2 {
+  position: absolute;
+  top: 4%;
+  left: 36%;
+}
+.advantages__item-2 span {
 }
 .advantages__item-3 {
+  position: absolute;
+  top: 12%;
+  left: 25%;
+}
+.advantages__item-3 span {
 }
 .advantages__item-4 {
+  position: absolute;
+  top: 7%;
+  left: 44%;
+}
+.advantages__item-4 span {
 }
 .advantages__item-5 {
+  position: absolute;
+  top: 43%;
+  left: 19%;
+}
+.advantages__item-5 span {
 }
 .advantages__item-6 {
+  position: absolute;
+  top: 11%;
+  left: 57%;
+}
+.advantages__item-6 span {
 }
 .advantages__item-7 {
+  position: absolute;
+  top: 92%;
+  left: 51%;
+}
+.advantages__item-7 span {
 }
 .advantages__item-8 {
+  position: absolute;
+  top: 44%;
+  left: 76%;
+}
+.advantages__item-8 span {
 }
 .advantages__item-9 {
+  position: absolute;
+  top: 80%;
+  left: 66%;
+}
+.advantages__item-9 span {
 }
 .advantages__item-10 {
+  position: absolute;
+  top: 81%;
+  left: 73%;
+}
+.advantages__item-10 span {
 }
 .advantages__item-11 {
+  position: absolute;
+  top: 15%;
+  left: 53%;
+}
+.advantages__item-11 span {
 }
 .advantages__desription {
+  line-height: 29px;
+
+  float: left;
+
+  width: 40%;
+  padding: 83px 0 0 33px;
+  position: relative;
+  min-height: 100%;
+}
+.advantages__desription p {
+  font-size: 18px;
+  font-weight: 300;
+
+  width: 320px;
+  margin: 0 0 33px;
+}
+.olievs {
+  background: url(../../img/olievs.png);
+  width: 459px;
+  height: 270px;
+  position: absolute;
+  bottom: -50px;
+  left: 57%;
 }
 .carte {
 }
