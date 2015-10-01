@@ -14,6 +14,8 @@
   font-family: 'Lato';
 }
 .header {
+  position: relative;
+
   height: 768px;
   padding: 25px 0 0;
 
@@ -84,10 +86,14 @@
   border-radius: 0;
   background: none;
 }
+
+.modal-button:focus {
+  color: #fff;
+}
 .navbar-default .navbar-toggle {
-  border-radius: 0;
-  border-color: #a09158;
   border-width: 2px;
+  border-color: #a09158;
+  border-radius: 0;
 }
 .modal-button:hover {
   color: #fff;
@@ -146,35 +152,189 @@
   border: 2px solid #b7a151;
   background: #b7a151;
 }
+.adress {
+  position: absolute;
+  z-index: 1;
+  bottom: 23px;
+
+  color: #fff;
+}
+.adress__item .fa {
+  font-size: 16px;
+
+  float: left;
+
+  color: #ccb77c;
+}
+.adress__item span {
+  font-size: 10px;
+  font-weight: 400;
+
+  margin-left: 7px;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.adress__item .adress__item-phone {
+  font-size: 12px;
+
+  display: block;
+
+  margin: 0 0 2px 16px;
+}
+.angle-down {
+  font-size: 30px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 11px;
+
+  width: 1170px;
+
+  text-align: center;
+}
+.angle-down .fa {
+  color: #fff;
+}
+.angle-down_color_brown {
+  width: 1110px;
+}
+.angle-down_color_brown .fa {
+  color: #ccb77c;
+}
+.adress__item {
+  margin-bottom: 3px;
+}
 .team {
+  padding-top: 71px;
+  position: relative;
+  height: 769px;
+  background-image: url(../../img/pattern-team.jpg);
 }
 .team__chief {
+  float: left;
+
+  width: 25%;
+  margin: 31px -24px 0 0;
+
+  text-align: center;
+}
+
+.team__chief img {
 }
 .team__chief-name {
+  font-size: 16px;
+
+  margin: 20px 0 0;
+
+  text-align: center;
+  text-transform: uppercase;
 }
 .team__chief-post {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+
+  text-align: center;
+}
+.team__right {
+  float: left;
+
+  width: 75%;
 }
 .team__description {
+  font-size: 17px;
+  font-style: italic;
+  line-height: 26px;
+
+  margin: 0 39px 0 0;
+  padding: 28px 20px 33px 43px;
+
+  letter-spacing: .53px;
+
+  color: #fff;
+  background-color: #b7a151;
+  background-image: url(../../img/pattern-description.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
 .team__all {
+  margin: 13px 0 0;
+}
+
+.team__all img {
+  float: left;
 }
 .team__all-description {
+  float: left;
 }
 .team__all-list {
+  margin: 76px 0 0;
+  padding: 0 0 0 19px;
 }
 .team__all-title {
+  font-size: 16px;
+  font-weight: 100;
+  font-style: italic;
+
+  display: block;
+
+  margin: 0 0 21px;
 }
 .team__all-item {
+  margin: 0 0 12px;
 }
 .team__all-name {
+  font-size: 13px;
+
+  display: block;
+
+  margin: 0 0 -4px;
+
+  letter-spacing: .3px;
+  text-transform: uppercase;
 }
 .team__all-post {
+  font-size: 12px;
+
+  display: block;
+}
+.granate {
+  position: absolute;
+  background: url(../../img/granate.png);
+  width: 292px;
+  bottom: 0;
+  height: 146px;
+  left: 30px;
+}
+.granate-part {
+  position: absolute;
+  background: url(../../img/granate-part.png);
+  width: 146px;
+  top: 0;
+  height: 113px;
+  right: 0;
 }
 .more {
+  width: 260px;
+  margin: 18px auto 0;
+  overflow: hidden;
 }
 .more__icon {
+  width: 35px;
+  height: 35px;
+
+  background: url(../../img/arrow-right.png) no-repeat;
+  float: left;
 }
 .more__title {
+  float: left;
+  text-transform: uppercase;
+  color: #000;
+  margin: 8px 0 0 14px;
+}
+.more__title:hover {
+  color: #000;
 }
 .advantages {
 }
