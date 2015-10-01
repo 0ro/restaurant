@@ -10,16 +10,21 @@
 .clearfix {
   zoom: 1;
 }
+html, body {
+  height: 100%;
+}
 .page {
   font-family: 'Lato';
+  height: 100%;
 }
 .header {
   position: relative;
 
-  height: 768px;
+  min-height: 100%;
   padding: 25px 0 0;
 
   background: url(../../img/bg-header.jpg);
+  background-size: cover;
 }
 .menu {
   margin: 0 -30px 0;
@@ -208,8 +213,9 @@
 .team {
   padding-top: 71px;
   position: relative;
-  height: 769px;
+  min-height: 100%;
   background-image: url(../../img/pattern-team.jpg);
+  overflow: hidden;
 }
 .team__chief {
   float: left;
@@ -299,12 +305,12 @@
 
   display: block;
 }
-.granate {
+#granate {
   position: absolute;
   background: url(../../img/granate.png);
   width: 292px;
-  bottom: 0;
-  height: 146px;
+  bottom: -116px;
+  height: 256px;
   left: 30px;
 }
 .granate-part {

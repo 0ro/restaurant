@@ -1,3 +1,11 @@
+$(document).bind( 'mousewheel', function (e) { 
+  var nt = $(document.body).scrollTop()-(e.originalEvent.wheelDeltaY); 
+  e.preventDefault(); 
+
+  $(document.body).stop().animate( { 
+    scrollTop : nt 
+  } , 300 ); 
+});
 $(document).ready(function() {
   $("#slider").owlCarousel({
     navigation : false, // Show next and prev buttons
@@ -20,6 +28,19 @@ $(document).ready(function() {
     //анимируем переход на расстояние - top за 1500 мс
     $('body,html').animate({scrollTop: top}, 1500);
   });
+  var parallaxEffect = function(wrapper, ellement, way, factor) {
+    $(window).scroll(function() {
+      var $wrapper = $(wrapper),
+          $ellement = $(ellement);
+      if (way === 'top' && (window.pageYOffset > $wrapper.offset().top)) {
+        $ellement[0].style.bottom = ((window.pageYOffset-$wrapper.offset().top)*factor)+ 'px';
+      }
+      if (way === 'bottom' && (window.pageYOffset > $wrapper.offset().top)) {
+        $ellement[0].style.top = ((window.pageYOffset-$wrapper.offset().top)*factor)+ 'px';
+      }
 
-
+    });
+  };
+  parallaxEffect('#team','#granate','top', 2);
+  parallaxEffect('#team','#granate-part','bottom', 2)
 });
